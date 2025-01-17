@@ -13,7 +13,7 @@ export default function ViewNote() {
     useEffect(() => {
         const fetchNote = async () => {
             try {
-                const res = await axios.get(`https://encurtador-link-backend-1.onrender.com/view/${id}`);
+                const res = await axios.get(`https://notas-temp-backend.onrender.com/view/${id}`);
                 setNoteContent(res.data.content);
             } catch (error) {
                 console.error("Erro ao carregar a nota:", error);
