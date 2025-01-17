@@ -15,7 +15,7 @@ export default function CreateNote() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post("http://localhost:3001/create", {
+            const res = await axios.post("https://encurtador-link-backend-1.onrender.com/create", {
                 content,
                 durationInMinutes: duration,
             });
